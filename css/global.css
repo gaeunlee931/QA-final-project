@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Niconne|Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora|Satisfy&display=swap');
+
+/*  OVERALL look and feel */
+body {
+    padding: 0%;
+    margin:0%;
+    font-family: 'Lato';
+    background: white;
+}
+
+
+header {
+    background: white;
+}
+/*  Logo styling - START */
+
+
+.navbar-brand img {
+    height:120px;
+    width:250px;
+    margin-left: 10%;
+}
+
+/*  Logo styling - DONE */
+
+/*Navigation START*/
+
+.nav-link {
+    font-size: 16px;
+    margin:15px;
+    color:#000 !important;
+    font-family: 'Lato';
+    font-weight: 500;
+}
+
+
+.nav-link:hover {
+    color: #dad9d9 !important;
+}
+
+
+.active .nav-link {
+    color:#fddd00 !important;
+}
+
+
+.menu-right-btn {
+    padding: 13px 46px;
+    margin-right: 4%;
+    background-color:#fddd00 ;
+    transition: all 300ms ease-in;
+    color: black;
+    border-color: #fddd00;
+}
+
+.menu-right-btn:hover {
+    color:white;
+    background-color: #fddd00;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
