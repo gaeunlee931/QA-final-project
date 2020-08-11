@@ -226,6 +226,39 @@ header {
 
 
 
+/*  Section 2  */
+
+.section-2 .container-fluid {
+    background-image: url('../img/4.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    height: 600px;
+    margin-top:20%;
+    
+
+}
+
+.section-2 .heading-1 {
+    margin-top: 15%;
+    margin-bottom: 4%;
+    font-family: 'Lato';
+    width:80%;
+    color:white;
+}
+
+.section-2 .para {
+    width:80%;
+    font-family: 'Lato';
+    color:white;
+    margin-bottom: 7%;
+}
+
+.section-2 .btn {
+    margin-bottom: 15%;
+    width:30%;
+    padding:2% 5%;
+}
+
 
 
 
