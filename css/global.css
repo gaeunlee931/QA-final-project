@@ -63,7 +63,7 @@ header {
 /*  */
 
 .site-content {
-    background-image: url('../img/11.jpg');
+    background-image: url('../img/main_banner_image.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
@@ -229,7 +229,7 @@ header {
 /*  Section 2  */
 
 .section-2 .container-fluid {
-    background-image: url('../img/4.jpg');
+    background-image: url('../img/gallery_image.jpg');
     background-size:cover;
     background-attachment: fixed;
     height: 600px;
