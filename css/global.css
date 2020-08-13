@@ -85,15 +85,15 @@ header {
 
 .site-desc {
     font-size: 15px;
-    padding-left: 15%;
     font-weight:600;
     text-align: center;
 }
 
 .site-btn1 {
-    margin-left: 20%;
+    margin-left: 7%;
     background-color: #01304a;
     color:white;
+
 }
 
 .site-btn2 {
@@ -102,7 +102,6 @@ header {
 }
 
 .site-btn1 {
-    margin-left: 20%;
     background-color: #01304a;
     color:white;
 }
@@ -366,20 +365,42 @@ hr.light-100 {
 
 @media screen and (max-width:768px){
     .section-1 .card {
-        width: 14rem;
+        margin-left:15%;
     }
+    
     .section-4 .col-md-7 img {
         width: 350px;
     }
-}
+    .navbar-brand img {
+    height:90px;
+    width:190px;
+    margin-left: 0%;
+    
+    }
 
-@media screen and (max-width:320px) {
-    .site-content .site-title {
-        font-size: 30px;
+
+   /* .site-content .site-btn2 {
+        display:none;
+
+    }*/
+     .site-desc {
+        font-size: 15px;
         padding-left: 15%;
-        
+        text-align: center;
         
     }
+
+
+}
+
+
+
+@media screen and (max-width:320px) {
+    
+
+   
+    
+
     .site-content .site-btn2 {
         display:none;
 
@@ -396,7 +417,7 @@ hr.light-100 {
         margin-left:8%;
     }
 
-    .section-1 .card {
+    .section-1 {
         width:15rem;
     }
 
