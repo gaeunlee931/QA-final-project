@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
 	<title>Barber2Go</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -13,77 +13,102 @@
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
-<header>
+
   
-    
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a href="#" class="navbar-brand ml-3"><img src="img/Barbers2Go-Logo.png"> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">    
+    <!-- Logo + toggle  -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+
+        <a class="navbar-brand" href="#"><img src="img/Barbers2Go-Logo.png"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">  
             <span class="navbar-toggler-icon"></span>
         </button>
 
+
+
 <!--  Navigation Bar  -->
-        <div class="collapse navbar-collapse"></div>
-        <div class="collapse navbar-collapse" id="navbarMenu" >
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a href="#" class="nav-link"> Home </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link"> About </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link"> Services </a>
-                </li>           
-                <li class="nav-item">
-                    <a href="#" class="nav-link"> Gallery </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link"> Contact </a>
-                </li> 
-                <li class="nav-item">
-                    <a href="#" class="nav-link"> News </a>
-                </li>          
-            </ul>            
-        <form class="form-inline my-2 my-lg-0">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-10">
             <button class="btn menu-right-btn" type="submit">
                 Booking
             </button>
-
-        </form>
-        
-        </div>
-
-    </nav>
-
-</header>
-
-<!-- Navigation - END -->
-
-<main>
-    <div class="container-fluid p-0">
-        <div class="site-content">
-            <div class="d-flex justify-content-center">
-                <div class="d-flex flex-column">
-                    <h1 class="site-title">BARBER<span style="color:#fddd00">2</span>GO</h1>
-                    <p class="site-desc">
-                        A premier mobile barber salon providing  
-                        a unique experience<br> catered to our clientele. 
-                        <br> Download the app to see and enjoy all the services!
-                    </p>
-                    
-                    
-                    <div class="d-flex flex-row">
-                        <input type="button" value="Essential Tips" class="btn site-btn1 px-4 py-3 mr-4 btn-dark">
-                        <input type="button" value="How To Videos" class="btn site-btn2 px-4 mr-4 btn-light">
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
+    </nav>
 
-<div class="section-3">   
-        <h1 class="heading-1"> SERVICES</h1> 
+
+
+
+
+<!-- Main Image banner -->
+
+
+<div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/carousel_image1.jpg">
+            <div class="carousel-caption">
+                <h1 class="display-4">Barber<span style="color:#fddd00">2</span>Go</h1>
+                <h3>A premier mobile barber salon providing  
+                        a unique experience catered to our clientele. 
+                        </h3>
+                <button type="button" class="btn btn-outline-light btn-lg">Essential Tips</button>
+                <button type="button" class="btn btn-primary btn-lg">How To Videos</button>
+            </div>
+        </div>
+        
+        <div class="carousel-item">
+            <img src="img/carousel_image2.jpg">
+        </div>
+        <div class="carousel-item">
+            <img src="img/carousel_image3.jpg">
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Service -->
+
+
+
+<!-- Service description section -->
+
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Services</h1>
+        </div>
+        <hr>
+    </div>
+</div>
+
+<div class="section-3">      
         <br>
         <br>
         <div class="container">
@@ -171,8 +196,13 @@
         </div>
     </div>
 
+    <br>
+    <br>
+
+
+
+<!-- Image divider -->
  <div class="section-0">
-        <!-- <div class="blackLayer"></div>    -->
             <div class="column">
                 <img src="img/image_divider1.jpg" alt="Img1" style="width:100%">
             </div>
@@ -185,48 +215,69 @@
     </div>
 
   <!-- ================ About Us ================= -->
-    <div class="section-1">
-        <div class="container text-center">
-            <h1 class="heading-1">ABOUT US</h1>
-            <p class="para-1">Located in the heart of Vancouver, Barbers2go is a premier mobile barber salon that provides a unique experience catered to our clientele. Driven by passion, expertise, and insight, our team is dedicated to providing service that keeps our clients not only looking good but feeling great. With Fashion, Style, and Virtue being key components in our work, our team is constantly educating themselves in the newest and most innovative styles. </p>
+        <div class="container-fluid padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h1 class="display-4">About Us</h1>
+                </div>
+                <hr>
+                <div class="col-12">
+                    <p>Located in the heart of Vancouver, Barbers2go is a premier mobile barber salon that provides a unique experience catered to our clientele. Driven by passion, expertise, and insight, our team is dedicated to providing service that keeps our clients not only looking good but feeling great. With Fashion, Style, and Virtue being key components in our work, our team is constantly educating themselves in the newest and most innovative styles. </p>
+                </div>
+            </div>
     </div>
     
+
+<br>
+    <br>
+
+
+<!-- Two column section -->
  
- <div class="section-2">
-        <div class="container-fluid">
-            <div class="d-flex justify-content-end">
-                <div class="d-flex flex-column m-4 ">
-                    <h1 class="heading-1"> Gallery</h1>
-                    <p class="para">
+        <div class="container-fluid gallPage padding">
+            <div class="row padding">
+                <div class="col-md-12 col-lg-6">
+                    <h1 class="display-4"> Gallery</h1>
+                    <p>
                         Want to see some of the many styles our incredible team of BARBER2GO can do for you?  Take a sneak peak into our shop and look at what we can do in our gallery today!
 
                     </p>
-                    
-                    <input type="button" value="Show" class="btn btn-danger">
+                    <br>
+                    <a href="#" class="btn btn-primary">Visit Gallery</a>
                 </div>
+                    <div class="col-lg-6">
+                        <img src="img/gallery_image.jpg" class="img-fluid">
+                    </div>
             </div>
         </div>
-    </div>
+ 
 
 
-    <div class="section-1">
-        <div class="container text-center">
-            <h1 class="heading-1">OUR TEAM</h1>
-            <p class="para-1">
-                Meet our team and choose your barber!  A hair cut at Barber 2 Go isn't just a hair cut. It's an experience. We use only the best salo products, and our experienced team of stylists will have you looking your absolute best.
-                 </p>
-        
+
+
+
+        <div class="container-fluid padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h1 class="display-4">Meet the Team </h1>
+                    <hr>
+                    <p>
+                         Meet our team and choose your barber!  A hair cut at Barber 2 Go isn't just a hair cut. It's an experience. We use only the best salo products, and our experienced team of stylists will have you looking your absolute best.
+                    </p>
+                </div>
+
+            </div>
         </div>
 
 
-
-
+<!-- Card -->
+<!-- 
 
         <div class="container">
         <div class="row justify-content-center text-left">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="img/christopher.jpg" alt="Image 1" class="card-img-top">
+                    <img class="card-img-top" src="img/christopher.jpg">
                     <div class="card-body">
                         <h4 class="card-title">Christopher</h4>
                         <p class="card-text"> 
@@ -244,8 +295,7 @@
                         <h4 class="card-title"> Jessie </h4>
                         <p class="card-text">
                                 twelve-year barbering career began with an apprenticeship program she enrolled in while living in Toronto. She was able to gain several years of hands-on experience building his skills while working in various shops and salons. After dedicating significant time learning her craft, she pursued and received her barber’s license from …
-                                
-                                <!-- the Ontario Board of Barbering and Cosmetology.  -->
+                             
                         </p>
                         <a href="#" class="btn btn-outline-secondary"> See Profile</a>
                     </div>
@@ -301,31 +351,73 @@
         
                 </div>   
         </div>
-    </div>
+    </div> -->
 
-     <div class="section-4 ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <img src="img/join_us_image.jpg" alt="Image-7" style="width:590px">
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="img/ashley.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Ashley</h4>
+                    <p class="card-text">Ashley is an Internet entrepreneur with almost 20 years of experience.</p>
+                    <a href="#" class="btn btn-outline-secondary">See Prifile</a>
                 </div>
-                <div class="col-md-5">
-                    <h1 class="text-white"> Didn't know where to start From</h1>
-                    <a href="#">JOIN US ! </a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="img/jessie.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Jessie Jo</h4>
+                    <p class="card-text">Jessie is a designer with almost 15 years of digital design experience.</p>
+                    <a href="#" class="btn btn-outline-secondary">See Prifile</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="img/christopher.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">Christopher</h4>
+                    <p class="card-text">Chris is a developer with over 5 years of web development experience.</p>
+                    <a href="#" class="btn btn-outline-secondary">See Prifile</a>
+                </div>
+            </div>
+        </div>
+    
+
+    </div>
+</div>
+
+
+
+    <!--  two Column section - Join us -->
+
+     <div class="container-fluid texImg padding">
+        <div class="row padding">
+                <div class="col-md-12 col-lg-6">
+                    <h1 class="display-4"> Didn't know where to start From?</h1>
+                    <a href="#" class="join">JOIN US ! </a>
                     <p class="para-1">
                         We are always looking for motivated, talented people who want to be a part of the team. Learn more about working for Barber 2 Go, and apply your applications online.
                     </p>
+                    <a href="#" class="btn btn-outline-secondary">Learn More</a>
                 </div>
-            </div>
+
+                <div class="col-lg-6">
+                    <img src="img/join_us_image.jpg" class="img-fluid">
+                </div>
         </div>
     </div>
 
 
-</main>
 
 
     <div class="section-5 text-center">
-        <h4 style="margin-top:5%;">Get the best of BARBER2GO</h4>
+        <h4>Get the best of BARBER2GO</h4>
         <h4 class="my-4">delivered to your inbox weekly</h4>
 
         <div class="form-inline justify-content-center">
@@ -393,12 +485,12 @@
 
 <script>
 
-window.sr = ScrollReveal({duration:1000});
-sr.reveal('.site-content .d-flex');
-sr.reveal('.section-1 .card');
-sr.reveal('.section-2 .d-flex');
-sr.reveal('.section-3 .col-md-4');
-sr.reveal('.section-4 .col-md-7, col-md-5');
+// window.sr = ScrollReveal({duration:1000});
+// sr.reveal('.site-content .d-flex');
+// sr.reveal('.section-1 .card');
+// sr.reveal('.section-2 .d-flex');
+// sr.reveal('.section-3 .col-md-4');
+// sr.reveal('.section-4 .col-md-7, col-md-5');
 
 
 </script>

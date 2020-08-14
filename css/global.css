@@ -1,21 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Niconne|Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Lora|Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,562;0,600;0,700;1,400;1,500;1,562;1,600;1,700&family=Satisfy&display=swap');
 
-/*  OVERALL look and feel */
-body {
-    padding: 0%;
-    margin:0%;
-    font-family: 'Lato';
-    background: white;
-
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Lora', serif;
+  color:#222;
+  font-size: 15px;
+  line-height: 28px;
 
 }
 
-
-header {
-    background: white;
+div .display-4 {
+    font-size: 50px;
+    font-family: 'Satisfy', cursive;
 }
-/*  Logo styling - START */
+/*  Logo styling*/
 
 
 .navbar-brand img {
@@ -24,26 +23,20 @@ header {
     margin-left: 10%;
 }
 
-/*  Logo styling - DONE */
 
-/*Navigation START*/
+/*Navigation*/
+
+.navbar {
+  padding:.8rem;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
 
 .nav-link {
-    font-size: 16px;
-    margin:15px;
-    color:#000 !important;
-    font-family: 'Lato';
-    font-weight: 500;
-}
-
-
-.nav-link:hover {
-    color: #dad9d9 !important;
-}
-
-
-.active .nav-link {
-    color:#fddd00 !important;
+  font-size: 1.1em !important;
 }
 
 
@@ -62,92 +55,60 @@ header {
     
 }
 
-/*  */
-
-.site-content {
-    background-image: url('../img/main_banner_image.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.site-title, .site-desc {
-    color: white;
-
-}
-
-.site-title {
-    margin-top:30%;
-    margin-bottom: 6%;
-    text-align: center;
-    font-size: 80px;
-    font-weight: 700;
-    font-family: 'Oswald';
-
-}
-
-.site-desc {
-    font-size: 15px;
-    font-weight:600;
-    text-align: center;
-}
-
-.site-btn1 {
-    margin-left: 7%;
-    background-color: #01304a;
-    color:white;
-
-}
-
-.site-btn2 {
-    background-color: white;
-
-}
-
-.site-btn1 {
-    background-color: #01304a;
-    color:white;
-}
-
-.site-btn2 {
-    background-color: white;
-
-}
-
-.site-btn1, .site-btn2 {
-    margin-top: 5%;
-    margin-bottom:40%;
-}
-
-/* Section 3  */
 
 
-.section-3 {
-    margin-top: 6%;
-    margin-bottom: 8%;
-    overflow:auto;
+
+
+
+/*Carousel - image slider*/
+
+.carousel-inner img{
+  width:100%;
+  height: 100%;
 }
 
 
-.section-3 i {
-    color: #000;
+
+/*styling caption*/
+
+.carousel-caption {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
 }
 
-.section-3 p {
-    color: rgba(0,0,0,0.59);
+.carousel-caption h1 {
+  font-size: 500%;
+  font-family: 'Satisfy', cursive;
+  text-shadow: 1px 1px 15px #000;
 }
 
-.section-3 .heading-1 {
-    text-align: center;
-    font-size: 39px;
-    font-weight: 700;
-    font-family: 'Oswald';
-    color:#01304a;
+.carousel-caption h3 {
+  font-size: 150%;
+  font-weight: 300;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+
+
+
+/* Banner button styling*/
+
+.btn-primary {
+  background-color: #01304a;
+  border:1px solid #01304a;
+}
+
+.btn-primary:hover {
+  background-color: #000000;
+  border:1px solid #000000;
 }
 
 
 
 
-/* Section-0 */
+
+/* Section-0: image divider; */
 
 .column {
     float:left;
@@ -177,135 +138,85 @@ header {
 
 
 
-/*  Section-1  */
+/*  Welcome section  */
 
-.section-1 .heading-1 {
-    margin-top: 15%;
-    margin-bottom:5%;
-    font-size: 39px;
-    font-weight: 700;
-    font-family: 'Oswald';
-    color:#01304a;
-
+.padding {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
-.section-1 .heading-2 {
-    margin-bottom: 5%;
-    font-size: 39px;
-    
+
+.welcome {
+  width:75%;
+  margin :0 auto;
+  padding-top:  2rem;
 }
 
-.section-1 .para-1 {
-    width: 60%;
-    margin-left: 20%;
-    margin-bottom: 5%;
-    font-size:25px;
-    line-height: 2;
-    font-family: 'Niconne';
-    
-    
-}
+/* horizone row for the welcome section*/
 
-.section-1 .card-text, .para-1 {
-    color: rgba(65,64,66,0.59);
-}
-
-.section-1 {
-    margin-bottom: 8%;
-    
-}
-
-.card {
-    width:20rem;
-    margin-top:10%;
-    min-height:30rem;
-    max-height:35rem;
-    /* overflow-wrap: break-word; */
-    /* display:block; */
-    /* overflow: hidden;  */
-    
+.welcome hr {
+  border-top: 2px solid #e4e4e4;
+  width:95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
 }
 
 
 
-/*  Section 2  */
+/*Gallery */
 
-.section-2 .container-fluid {
-    background-image: url('../img/gallery_image.jpg');
-    background-size:cover;
-    background-attachment: fixed;
-    height: 600px;
-    margin-top:20%;
-    overflow:auto;
-    
-
+.gallPage {
+    background-color:#e4e4e4;
 }
 
-.section-2 .heading-1 {
-    margin-top: 15%;
-    margin-bottom: 4%;
-    font-family: 'Lato';
-    width:80%;
-    color:white;
-    
-}
-
-.section-2 .para {
-    width:80%;
-    font-family: 'Lato';
-    color:white;
-    margin-bottom: 7%;
-   
-}
-
-.section-2 .btn {
-    margin-bottom: 15%;
-    width:30%;
-    padding:2% 5%;
-}
-
-
-
-/* Section 4 */
-
-.section-4 {
+.gallPage h1 {
     margin-top: 8%;
-    background-color:#01304a;
+
 
 }
 
-.section-4 .row .col-md-7, .col-md-5 {
-    margin-top: 10%;
-    margin-bottom: 10%;
+.gallPage .btn {
+    margin-top: 2%;
+    margin-bottom:5%;
 }
 
-.section-4 a {
-    color: #fddd00;
-    font-size: 40px;
-    text-decoration: underline;
-    
+/* Join us - two column styling */
 
+.texImg {
+     background-color:#01304a;
 }
 
-.section-4 .para-1 {
+.para-1 {
     color: white;
-    font-family: 'Lato';
     margin:0;
     margin-top: 7%;
-    font-size: 17px;
     padding:0;
    
 }
 
-.section-4 h1 {
-    font-size: 30px;
-   
+.texImg .join{
+    color: #fddd00;
+    font-size: 40px;
+    text-decoration: underline;
 }
 
-.section-5 {
-    margin-top: 15%;
-    
+
+.texImg img {
+    margin-top: 8%;
 }
+
+.texImg .display-4 {
+    margin-top: 8%;
+    font-size: 50px;
+    font-family: 'Satisfy', cursive;
+    color: white;
+
+}
+
+.texImg .btn {
+    margin-top: 5%;
+}
+
 
 
 /* Newsletter section 5 */
@@ -322,9 +233,19 @@ header {
     font-style: italic;
 }
 
+.section-5 {
+    margin-top: 5%;
+}
 
 
 /* Footer */
+
+hr.light {
+  border-top: 1px solid #e4e4e4;
+  width:75%;
+  margin-top:.8rem;
+  margin-bottom:1rem;
+}
 
 
 footer img {
@@ -367,23 +288,172 @@ hr.light-100 {
 
 
 
+
+
+
+
 /* Mobile version */
 
-@media screen and (max-width:768px){
+@media screen and (max-width:590px){
 
-        html,body
-    {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        min-width: 100%;
-        overflow-x:hidden;
-    }
+
+/*social icons*/
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+
+
+  }
+@media (max-width: 768px) {
+  
+
+/*carousel info */
+.carousel-caption {
+  top:45%;
+
+}
+
+.carousel-caption h1 {
+  font-size: 350%;
+
+}
+
+.carousel-caption h3 {
+  font-size: 140%;
+  font-weight: 400;
+  padding-bottom: .2rem;
+}
+
+.carousel-caption .btn {
+  font-size: 95%;
+  padding: 8px 14px;
+}
+
+/*welcome section*/
+.display-4 {
+  font-size: 200%;
+}
+
+ .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+
+
+
+
+
+}
+
+
+
+
+
+@media (max-width: 576px) {
+  
+  .navbar-brand img {
+    height:80px;
+    width:175px;
+    margin-left: -5px;
     
+    }
+    p {
+        font-size: 13px;
+    }
+  /*Carousel*/
+
+  .carousel-caption {
+  top:40%;
+
+}
+
+.carousel-caption h1 {
+  font-size: 250%;
+
+}
+
+.carousel-caption h3 {
+  font-size: 80%;
+
+}
+
+.carousel-caption .btn {
+  font-size: 90%;
+  padding: 4px 8px;
+}
+
+.carousel-indicators {
+  display:none;
+}
+
+
+.display-4 {
+  font-size: 160%;
+}
+
+ .social a {
+    font-size: 2em;
+    padding: .7rem;
+  }
+
+  /*Newsletter*/
+
+    .section-5 {
+        margin-top: 15%;
+    }
+
+    .section-5 h4 {
+        font-size: 17px;
+        line-height: 5px;
+    }
+
+    .form-inline input{
+        margin: 0% 10% 5% 10%;
+    }
+
+     .section-4 .col-md-5 {
+        padding:0% 15%;
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /*logo custom*/
-    .navbar-brand img {
+  /*  .navbar-brand img {
     height:80px;
     width:175px;
     margin-left: -5px;
@@ -404,80 +474,32 @@ hr.light-100 {
 
 
 
-/* Team card*/
-    .section-1 .card {
-        margin-left:15%;
-    }
+*/
     
-    .section-4 .col-md-7 img {
+    /*.section-4 .col-md-7 img {
         width: 350px;
     }
-
-
-    .section-3 {
-        font-size: 15px;
-    }
-
+*/
     /*Gallery*/
 
-    .section-2 img {
+   /* .section-2 img {
         height:50%;
     }
 
-    .section-5 h4 {
-
-        font-size: 17px;
-        line-height: 5px;
+    .section-2 {
+        line-height: 25px;
     }
 
-    .form-inline input{
-        margin: 0% 10% 5% 10%;
-    }
+*/
 
-     .section-4 .col-md-5 {
-        padding:0% 15%;
-    }
-}
-
-
-
-
-@media screen and (max-width:320px) {
     
 
 
-    
-    .site-content .site-btn1 {
-        margin-left: 15%;
-    }
 
-    .section-1 .heading-1, .section-1 .heading-2 {
-        font-size:25px;
-    }
-    .section-1 .col-md-4 {
-        padding:5%;
-        margin-left:8%;
-    }
-
-    .section-1 {
-        width:15rem;
-    }
-
-    .section-4 .col-md-5 {
-        padding:0% 15%;
-    }
-    
-    footer input[type="button"] {
-        margin-top: 5%;
-    }
-    .social i {
-        
-    }
-}
+/*
 
 
-
-
+*/
 
 
 
